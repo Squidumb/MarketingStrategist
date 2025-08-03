@@ -1,0 +1,532 @@
+/* ========== FORM CHECK ========== */
+.form-check-input:checked {
+  background-color: #1e3a8a !important; /* Blue accent */
+  border-color: #1e3a8a !important;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.25) !important; /* Blue shadow */
+}
+
+/* Strategy Page Layout */
+.strategy-page-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.strategy-main-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Strategy Header */
+.strategy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.strategy-title {
+  color: #ffffff; /* White accent color */
+  font-weight: 600;
+  margin: 0;
+}
+
+.back-button {
+  background: rgba(30, 58, 138, 0.1);
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  color: #1e3a8a; /* Blue accent color */
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background: rgba(30, 58, 138, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Strategy Container */
+.strategy-container {
+  border: 1px solid rgba(30, 58, 138, 0.2); /* Blue border */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 180px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.strategy-content-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.strategy-content {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 1rem;
+  color: black; /* Black text color */
+  line-height: 1.7;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* Scrollbar styling for strategy content */
+.strategy-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.strategy-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.strategy-content::-webkit-scrollbar-thumb {
+  background: rgba(30, 58, 138, 0.3);
+  border-radius: 3px;
+}
+
+.strategy-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 58, 138, 0.5);
+}
+
+/* Strategy Actions */
+.strategy-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  /* background: #1e3a8a; */
+  border-top: 1px solid rgba(30, 58, 138, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+
+.download-button {
+  background: rgba(30, 58, 138, 0.1);
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  color: #1e3a8a; /* Blue accent color */
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  background: rgba(14, 16, 19, 0.2); /* Hover effect color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button-icon {
+  margin-right: 0.5rem;
+}
+
+.button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0e1013;
+  border-color: #0e1013;
+}
+
+.button:active {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+}
+
+/* Email Section */
+.email-card {
+  background: #1e3a8a;
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.email-title {
+  color: #ffffff; /* White accent color */
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.email-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.email-input {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  border-radius: 6px;
+  color: rgba(30, 58, 138, 0.6);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.email-input:focus {
+  border-color: rgba(30, 58, 138, 0.6);
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.15);
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.send-email-button {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 138, 0.2) 0%,
+    rgba(30, 58, 138, 0.2) 100%
+  );
+  border: 1px solid rgba(30, 58, 138, 0.4);
+  color: #1e3a8a;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.send-email-button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 138, 0.3) 0%,
+    rgba(30, 58, 138, 0.3) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.strategy-content h1,
+.strategy-content h2,
+.strategy-content h3 {
+  color: #1e3a8a;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.strategy-content h1 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(30, 58, 138, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.strategy-content h2 {
+  font-size: 1.5rem;
+}
+
+.strategy-content h3 {
+  font-size: 1.25rem;
+}
+
+.strategy-content strong {
+  color: rgba(30, 58, 138, 0.9);
+  font-weight: 600;
+}
+
+.strategy-content ul,
+.strategy-content ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.strategy-content li {
+  margin-bottom: 0.5rem;
+}
+
+.strategy-content p {
+  margin-bottom: 1rem;
+}
+
+.strategy-content blockquote {
+  border-left: 3px solid rgba(30, 58, 138, 0.5);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: rgba(30, 58, 138, 0.8);
+  font-style: italic;
+}
+
+.strategy-content code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #1e3a8a; /* Blue accent color */
+}
+
+.strategy-content pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid rgba(30, 58, 138, 0.2);
+}
+
+.strategy-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.strategy-content th {
+  background: rgba(30, 58, 138, 0.1);
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  padding: 0.75rem;
+  text-align: left;
+  color: #1e3a8a; /* Blue accent color */
+}
+
+.strategy-content td {
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  padding: 0.75rem;
+}
+
+.strategy-content tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sample-prompts-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 112, 192, 0.2);
+}
+
+.sample-prompts-title {
+  color: #070f26;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sample-prompts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.prompt-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 112, 192, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.prompt-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 112, 192, 0.15);
+  border-color: rgba(0, 112, 192, 0.5);
+  background: white;
+}
+
+.prompt-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.prompt-icon {
+  color: #070f26;
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.prompt-card p {
+  margin: 0;
+  color: #070f26;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Form Enhancements */
+.form-control {
+  transition: all 0.3s ease !important;
+}
+
+.form-control:focus {
+  border-color: #070f26 !important;
+  box-shadow: 0 0 0 0.25rem rgba(7, 15, 38, 0.25) !important;
+}
+
+/* Prompt Cards Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.prompt-card {
+  animation: slideIn 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+.prompt-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.prompt-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.prompt-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.prompt-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.prompt-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* Custom Scrollbar for Prompts */
+.prompts-scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.prompts-scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(7, 15, 38, 0.3);
+  border-radius: 3px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .card-body {
+    flex-direction: column !important;
+  }
+
+  .prompts-column {
+    border-left: none !important;
+    border-top: 1px dashed rgba(7, 15, 38, 0.3) !important;
+    padding-left: 0 !important;
+    padding-top: 2rem !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .strategy-page-container {
+    flex-direction: column;
+  }
+
+  .email-section {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .strategy-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .strategy-actions {
+    flex-direction: column;
+  }
+
+  .download-button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #1e3a8a; /* Blue button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+
+  .download-button:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(30, 58, 138, 0.3) 0%,
+      rgba(30, 58, 138, 0.3) 100%
+    );
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Slight lift on hover */
+  }
+}
+
+.strategy-content {
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 58, 138, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 58, 138, 0.5);
+}

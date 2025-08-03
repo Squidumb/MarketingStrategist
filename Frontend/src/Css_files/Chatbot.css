@@ -1,0 +1,264 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.user-message,
+.bot-message {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-out;
+}
+ 
+.user-message {
+  align-items: flex-end;
+}
+ 
+.bot-message {
+  align-items: flex-start;
+}
+ 
+.message-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: rgba(30, 58, 138, 0.5); /* Softer blue for meta info */
+}
+ 
+.message-sender {
+  font-weight: 500;
+}
+ 
+.message-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+ 
+div:hover .message-actions {
+  opacity: 1;
+}
+ 
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: rgba(30, 58, 138, 0.1); /* Softer blue background */
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  border-radius: 4px;
+  color: rgba(30, 58, 138, 0.8);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+ 
+.download-btn:hover {
+  background: #0e1013; /* Darker effect on hover */
+  color: #fff;
+}
+ 
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+}
+ 
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(30, 58, 138, 0.6); /* Softer blue */
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+ 
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+ 
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+ 
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+ 
+.suggestion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0.75rem 1.25rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  margin: 1rem 0;
+}
+ 
+.suggestion-chip {
+  background: rgba(30, 58, 138, 0.1); /* Softer blue background */
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: rgba(30, 58, 138, 0.9);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  animation: fadeIn 0.5s ease-out;
+}
+ 
+.suggestion-chip:hover {
+  background: #0e1013; /* Darker effect on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+ 
+.markdown-content {
+  line-height: 1.6;
+}
+ 
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: rgba(30, 58, 138, 0.9); /* Softer blue for headers */
+}
+ 
+.markdown-content p {
+  margin-bottom: 1rem;
+}
+ 
+.markdown-content ul,
+.markdown-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+ 
+.markdown-content code:not(.language-*) {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+ 
+.markdown-content pre {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+}
+ 
+.markdown-content a {
+  color: #0056b3; /* Blue color for links */
+  text-decoration: none;
+}
+ 
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+ 
+.markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+ 
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid rgba(30, 58, 138, 0.3); /* Softer blue for table */
+  padding: 8px 12px;
+  text-align: left;
+}
+ 
+.markdown-content th {
+  background: rgba(30, 58, 138, 0.1);
+}
+ 
+.message-bubble {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.message-bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+ 
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+ 
+.copy-button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+ 
+.copy-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+ 
+.message-reactions {
+  display: flex;
+  gap: 6px;
+}
+ 
+.reaction-btn {
+  background: transparent;
+  border: none; 
+  color: rgba(30, 58, 138, 0.5);/* Softer blue for reactions */
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+ 
+.reaction-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+ 
+.download-options {
+  display: flex;
+  gap: 6px;
+}
+ 
+ 
