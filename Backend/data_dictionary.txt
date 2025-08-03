@@ -1,0 +1,66 @@
+“customer_data” Table:
+1. user_id: Unique identifier for each customer (e.g., 1001)
+2. name: Full name of the customer (e.g., "Ashish Jain")
+3. email: Customer's email address (e.g., "ashish.jain@example.com")
+4. age: Customer's age in years (e.g., 35)
+5. gender: Customer's gender (e.g., "M", "F")
+6. phone_number: Customer's contact number (e.g., "705803737")
+7. city: City of residence (e.g., "Mumbai")
+8. state: State of residence (e.g., "Maharashtra")
+9. zip_code: Postal code of residence (e.g., "10001")
+10. occupation: Customer's job or profession (e.g., "Software Engineer")
+11. marital_status: Customer's marital status (e.g., "S", "M" for Single and Married respectively)
+12. owns_vehicle: Indicates if customer owns a vehicle (e.g., "Yes", "No")
+13. owns_home: Indicates if customer owns a home (e.g., "Yes", "No")
+14. has_children: Indicates if customer has children (e.g., "Yes", "No")
+15. credit_score: Customer's credit score category (e.g., "Excellent", "Good", "Fair", "Poor")
+
+“products_data” Table:
+1. product_id: Unique identifier for each product (e.g., 50)
+2. product_name: Name of the financial product (e.g., "Fixed Deposit")
+3. category: Category of the product (e.g., "Government Schemes", "Loans", "Digital Services")
+4. description: Brief description of the product (e.g., "High-interest savings account with premium benefits")
+5. tenure: Duration or term of the product, if applicable (e.g., "Up to 120 months")
+6. interest_rate: Interest rate associated with the product (e.g., "2.5%", "Variable")
+7. eligibility_criteria: Basic eligibility requirements for the product (e.g., "Minimum balance Rs5000, Age 18+")
+
+“interactions” Table:
+1. interaction_id: Unique identifier for each interaction (e.g., 10001)
+2. channel_id: ID of the channel through which interaction occurred (e.g., 1)
+3. user_id: ID of the customer involved in the interaction (e.g., 1001)
+4. product_id: ID of the product involved in the interaction (e.g., 101)
+5. first_timestamp: Time of first interaction (e.g., "2024/06/01")
+6. last_timestamp: Time of last interaction (e.g., "2024/06/01")
+7. view_count: Number of times customer viewed the product (e.g., 3)
+8. time_spent: Total time spent interacting with the product in seconds (e.g., 2700)
+9. time_for_application: Time taken to complete application in seconds, if applicable (e.g., 900)
+10. is_application_complete: Application status if the application is completed (eg: “FALSE”, “TRUE”)
+10. conversion_rate: Probability of conversion for this interaction (e.g., 0.75)
+11. event_list: Sequence of events during the interaction (e.g., ['view', 'start_application', ‘applied'])
+
+“channel_performance” Table:
+1. channel_id: Unique identifier for each channel (e.g., 1)
+2. channel_name: Name of the marketing channel (e.g., "Facebook", "Instagram", "Google Ads", “YouTube Ads”, “Twitter/X”, “Email”)
+3. budget: Allocated budget for the channel in INR (e.g., 5000)
+4. application_revenue: Revenue generated through the channel in INR(e.g., 150000)
+5. cost_per_mille: Average cost in INR to acquire 1000 customer through this channel (e.g., 25.50)
+6. click_through_rate_percentage: Percentage of users who clicked on ads (e.g., 2.05)
+7. conversions: Number of successful conversions (e.g., 1600)
+8. conversion_rate: Percentage of interactions that result in conversions (e.g., 0.03)
+9. return_on_ad_spend: Percentage ratio of revenue generated to budget allocated for the channel (e.g., 3.5)
+
+“applications” Table:
+1. application_id: Unique identifier for each application (e.g., 512)
+2. interaction_id: ID of the interaction that led to the application (e.g., 10001)
+3. user_id: ID of the customer who submitted the application (e.g., 1001)
+4. product_id: ID of the product being applied for (e.g., 101)
+5. application_date: Date when the application was submitted (e.g., "2023-06-01")
+6. product_rating: Customer's rating of the product (e.g., 4)
+7. application_amount: Amount in INR requested in the application, if applicable (e.g., 10000)
+8. fees_or_charges: Any fees or charges associated with the application in INR (e.g., 50.00)
+
+“customer_segments” Table:
+- user_id: Unique identifier for each customer (e.g., 1).
+- segment_id: Identifier for the customer segment (e.g., 2).
+- segment_name: Name of the customer segment, representing categorization based on behavioral or demographic factors (e.g., "Scheme Beneficiaries, Digital Finance Users, Comprehensive Users, Loan Seekers, Service Seekers)
+

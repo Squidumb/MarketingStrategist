@@ -1,0 +1,8 @@
+[
+  {
+    "model": "moonshotai/Kimi-K2-Instruct:novita",
+    "api_key": "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",
+    "base_url": "https://router.huggingface.co/v1",
+    "api_type": "openai"
+  }
+]
