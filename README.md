@@ -18,6 +18,13 @@ to run on:
 
 From there, the dashboard, chatbot, and campaign generator all operate on whatever you plugged in.
 
+## Demo video
+
+<video controls width="100%" playsinline>
+  <source src="./assets/End%20to%20End%20flow.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 ## Why agents (not just a dashboard)
 
 The dashboard (`/get-dashboard-data`, `/get-filtered-data`) is deliberately **rigid**: fixed SQL,
