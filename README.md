@@ -20,13 +20,9 @@ From there, the dashboard, chatbot, and campaign generator all operate on whatev
 
 ## Demo video
 
-<<<<<<< HEAD
-[![Demo video](./assets/landing%20page.png)](./assets/End%20to%20End%20flow.mp4)
-=======
-<video src="./assets/End%20to%20End%20flow.mp4" controls width="100%" data-canonical-src="./assets/End%20to%20End%20flow.mp4">
-  Your browser does not support the video tag.
+<video controls width="100%" playsinline>
+  <source src="./assets/End%20to%20End%20flow.mp4" type="video/mp4" />
 </video>
->>>>>>> 5804864c5f37e8f64a8237e54489775c51650a25
 
 ## Why agents (not just a dashboard)
 
