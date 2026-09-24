@@ -1,0 +1,35 @@
+# Swap this file to re-skin the whole agent stack for a different client/vertical
+# without touching any agent, prompt, or workflow code.
+brand:
+  name: "National Bank"
+  website: "www.nationalbank.in"
+  contact_phone: "9999-8888-77"
+  contact_email: "nationalbank@example.com"
+  currency: "INR"
+
+domain:
+  industry_scope: "Indian banking and financial services"
+  redact_terms: ["PNB"] # real-world names that must be anonymized to the brand name above
+
+segments:
+  - name: "Service Seekers"
+    description: >
+      Engage with a variety of services, including international services, capital services,
+      and digital services. Interested in diverse offerings supporting business operations.
+  - name: "Scheme Beneficiaries"
+    description: >
+      Primarily focused on government schemes and capital services; benefit from financial
+      programs such as MSME schemes.
+  - name: "Comprehensive Users"
+    description: >
+      Broad range of financial products - loans, international services, capital services,
+      digital services, and MSME schemes.
+  - name: "Loan Seekers"
+    description: "Interested in loans and related financial products for growth or expenses."
+  - name: "Digital Finance Users"
+    description: >
+      Engage with digital services and government schemes; comfortable with technology-driven
+      financial solutions.
+
+social:
+  twitter_char_limit: 280
