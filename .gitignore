@@ -1,2 +1,10 @@
 /Frontend/node_modules/
 /Backend/mar-venv
+venv/
+__pycache__/
+*.pyc
+.env
+**/.env
+Backend/CONFIG_LIST.json
+Backend/conversation_log.txt
+Backend/Database/*.db
