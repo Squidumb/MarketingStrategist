@@ -21,7 +21,7 @@ From there, the dashboard, chatbot, and campaign generator all operate on whatev
 ## Demo video
 
 <video controls width="100%" playsinline>
-  <source src="./assets/End%20to%20End%20flow.mp4" type="video/mp4" />
+  <source src="https://github.com/Squidumb/MarketingStrategist/raw/main/assets/End%20to%20End%20flow.mp4" type="video/mp4" />
 </video>
 
 ## Why agents (not just a dashboard)
