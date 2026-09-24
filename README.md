@@ -1,7 +1,7 @@
 # Marketing Strategist
 
 An agentic marketing assistant that configures itself around **your** data: upload a SQLite
-database and a domain config, and every agent — SQL, chatbot, content, image prompt; re-points
+database and a domain config, and every agent: SQL, chatbot, content, image prompt; re-points
 itself to your schema and brand. Ships with a sample banking dataset, but isn't tied to one.
 
 ## Getting started: bring your own data
@@ -20,7 +20,13 @@ From there, the dashboard, chatbot, and campaign generator all operate on whatev
 
 ## Demo video
 
+<<<<<<< HEAD
 [![Demo video](./assets/landing%20page.png)](./assets/End%20to%20End%20flow.mp4)
+=======
+<video src="./assets/End%20to%20End%20flow.mp4" controls width="100%" data-canonical-src="./assets/End%20to%20End%20flow.mp4">
+  Your browser does not support the video tag.
+</video>
+>>>>>>> 5804864c5f37e8f64a8237e54489775c51650a25
 
 ## Why agents (not just a dashboard)
 
