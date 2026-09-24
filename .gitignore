@@ -1,5 +1,4 @@
 /Frontend/node_modules/
-/Backend/mar-venv
 venv/
 __pycache__/
 *.pyc
@@ -8,3 +7,6 @@ __pycache__/
 Backend/CONFIG_LIST.json
 Backend/conversation_log.txt
 Backend/Database/*.db
+Backend_old
+Backend/import_check.log
+Backend/.cache/
