@@ -18,11 +18,9 @@ to run on:
 
 From there, the dashboard, chatbot, and campaign generator all operate on whatever you plugged in.
 
-## Demo video
-
-<video controls width="100%" playsinline>
-  <source src="https://github.com/Squidumb/MarketingStrategist/raw/main/assets/End%20to%20End%20flow.mp4" type="video/mp4" />
-</video>
+## Walkthrough
+Click on the image to be directed to the video
+[![Demo video](./assets/landing%20page.png)](./assets/End%20to%20End%20flow.mp4)
 
 ## Why agents (not just a dashboard)
 
